@@ -1,4 +1,4 @@
-package br.com.clock.conf.controller;
+package br.com.clock.controller;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
