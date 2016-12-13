@@ -1,5 +1,8 @@
 .metadata
 .recommenders
+.settings
+.classpath
+.project
 /Servers
 /RemoteSystemsTempFiles
 /clock-app/target
