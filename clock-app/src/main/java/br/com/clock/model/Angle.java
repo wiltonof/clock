@@ -11,7 +11,7 @@ public class Angle {
 	private Double angle;
 	
 	public Angle(HoursInformapation hoursInformapation) {
-		this.angle = hoursInformapation.getAngle();
+		this.angle = hoursInformapation.getAngle();		
 	}
 
 	public Double getAngle() {

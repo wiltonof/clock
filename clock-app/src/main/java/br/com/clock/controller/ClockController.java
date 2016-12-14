@@ -21,12 +21,11 @@ public class ClockController extends ApiController {
 
 	@RequestMapping(value = CLOCK_ENDPOINT, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE )
 	public ResponseEntity<Angle> clock( @PathVariable String hour,@PathVariable String minute ){
-
-		Angle angle = new Angle(clockService.clock(Integer.parseInt(hour), Integer.parseInt(minute)));
-	
-		if(angle != null){
+		Angle angle = null;
+		try{
+			angle = new Angle(clockService.clock(Integer.parseInt(hour), Integer.parseInt(minute)));
 			return new ResponseEntity<Angle>(angle, HttpStatus.OK);
-		}else{
+		}catch(NullPointerException exception){
 			return new ResponseEntity<Angle>(angle, HttpStatus.FAILED_DEPENDENCY);
 		}
 	}
