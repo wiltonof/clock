@@ -4,7 +4,7 @@ public class HoursInformapation {
 
 	private Integer id;
 	private Integer hour;
-	private Integer minut;
+	private Integer minute;
 	private Double 	angle;
 	
 	public Integer getId() {
@@ -19,11 +19,11 @@ public class HoursInformapation {
 	public void setHour(Integer hour) {
 		this.hour = hour;
 	}
-	public Integer getMinut() {
-		return minut;
+	public Integer getMinute() {
+		return minute;
 	}
-	public void setMinut(Integer minut) {
-		this.minut = minut;
+	public void setMinute(Integer minute) {
+		this.minute = minute;
 	}
 	public Double getAngle() {
 		return angle;
